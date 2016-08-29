@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="GroupWan Messeger:jar">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="EasyShare.jar">
+      <element id="module-output" name="EasyShare" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/java/jfoenix.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/sqlite-jdbc-3.8.11.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/java/TrayNotification-master/TrayNotification-master/out/TrayNotification.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

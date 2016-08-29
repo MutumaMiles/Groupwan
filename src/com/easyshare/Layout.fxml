@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.easyshare.Controller">
+   <children>
+      <Label fx:id="usernameLabel" layoutX="196.0" layoutY="63.0" prefHeight="38.0" prefWidth="195.0">
+         <font>
+            <Font name="Monaco" size="15.0" />
+         </font></Label>
+      <JFXButton fx:id="createHotspotButton" buttonType="RAISED" layoutX="202.0" layoutY="113.0" onAction="#showHotspotWindow" prefHeight="38.0" prefWidth="153.0" ripplerFill="#19d0dd" style="-fx-background-color: #19d0dd;" text="Create Hotspot" />
+      <Label layoutX="88.0" prefHeight="63.0" prefWidth="356.0" text="GroupWan Messenger">
+         <font>
+            <Font name="Monaco" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="292.0" layoutY="181.0" prefHeight="38.0" prefWidth="204.0" text="Online Friends" textFill="#35e1e4">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="conversionsArea" editable="false" layoutX="21.0" layoutY="219.0" prefHeight="273.0" prefWidth="261.0" promptText="Your conversions go here" wrapText="true" />
+      <TextArea fx:id="messageArea" layoutX="21.0" layoutY="513.0" prefHeight="87.0" prefWidth="315.0" promptText="Type a message here and press send message button" wrapText="true" />
+      <JFXButton fx:id="sendMessageButton" buttonType="RAISED" layoutX="348.0" layoutY="513.0" onAction="#sendMessage" prefHeight="31.0" prefWidth="153.0" ripplerFill="#1adae8" style="-fx-background-color: #19d0dd;" text="Send Message" />
+      <JFXButton fx:id="sendFileButton" buttonType="RAISED" layoutX="348.0" layoutY="566.0" onAction="#sendFile" prefHeight="31.0" prefWidth="153.0" ripplerFill="#1adae8" style="-fx-background-color: #19d0dd;" text="Send File" />
+      <ImageView fx:id="profileImage" fitHeight="135.0" fitWidth="182.0" layoutX="13.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXListView fx:id="listView" layoutX="289.0" layoutY="217.0" onMouseClicked="#selectFriend" prefHeight="280.0" prefWidth="221.0" />
+      <JFXButton fx:id="fileHistory" buttonType="RAISED" layoutX="400.0" layoutY="50.0" onAction="#showFileHistory" prefHeight="26.0" prefWidth="92.0" ripplerFill="WHITE" style="-fx-background-color: #009eff;" text="File History" textFill="WHITE" />
+      <Label fx:id="activeFriend" layoutX="66.0" layoutY="200.0" prefHeight="16.0" prefWidth="211.0" wrapText="true" />
+   </children>
+</AnchorPane>

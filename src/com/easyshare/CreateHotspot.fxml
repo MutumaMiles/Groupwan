@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="338.0" prefWidth="505.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.easyshare.CreateHotspotController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="62.0" prefWidth="445.0" text="Create Hotspot">
+         <font>
+            <Font name="Monaco" size="51.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="97.0" prefHeight="38.0" prefWidth="239.0" text="Hotspot Name" textFill="#1be3dc">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="176.0" prefHeight="38.0" prefWidth="239.0" text="Hotspot Password" textFill="#1be3dc">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="hotspotName" focusColor="#1e586b" labelFloat="true" layoutX="268.0" layoutY="101.0" maxWidth="204.0" minWidth="187.0" prefHeight="31.0" prefWidth="204.0" promptText="Hotspot Name Here" />
+      <JFXTextField fx:id="hotspotPassword" focusColor="#1e586b" labelFloat="true" layoutX="268.0" layoutY="180.0" maxWidth="204.0" minWidth="187.0" prefHeight="31.0" prefWidth="204.0" promptText="Hotspot Password Here" />
+      <Label layoutX="7.0" layoutY="233.0" prefHeight="38.0" prefWidth="493.0" text="The password should have more than Eight(8) letters or characters" textFill="#d31f1f">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="65.0" layoutY="279.0" onAction="#cancelButton" prefHeight="38.0" prefWidth="102.0" ripplerFill="#c62a2d" style="-fx-background-color: #1be3dc;" text="Cancel" />
+      <JFXButton buttonType="RAISED" layoutX="292.0" layoutY="279.0" onAction="#createHotspot" prefHeight="38.0" prefWidth="102.0" ripplerFill="#c62a2d" style="-fx-background-color: #1be3dc;" text="Create" />
+   </children>
+</AnchorPane>
